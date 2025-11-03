@@ -57,11 +57,11 @@
       {
         "id": "what",
         "title": "WHAT：做什么？",
-        "subtitle": "构建'培训+服务+产品'的业务矩阵",
-        "lineRange": [31, 39],
+        "subtitle": "构建'培训+咨询+工具+平台'的业务体系",
+        "lineRange": [31, 73],
         "color": "#7c3aed",
         "icon": "💼",
-        "description": "业务定位、客户选择和生态合作策略",
+        "description": "核心定位、业务架构、产品体系和生态合作",
         "subsections": [
           {
             "id": "positioning",
@@ -70,9 +70,21 @@
             "description": "咨询式培训服务商的定位"
           },
           {
+            "id": "architecture",
+            "title": "业务架构",
+            "lineRange": [36, 50],
+            "description": "12345战略架构"
+          },
+          {
+            "id": "products",
+            "title": "产品体系",
+            "lineRange": [51, 62],
+            "description": "三类产品体系"
+          },
+          {
             "id": "ecosystem",
             "title": "生态合作",
-            "lineRange": [36, 39],
+            "lineRange": [63, 73],
             "description": "合作伙伴矩阵构建"
           }
         ]
@@ -81,10 +93,10 @@
         "id": "how",
         "title": "HOW：如何做？",
         "subtitle": "合纵连横与能力自建",
-        "lineRange": [40, 105],
+        "lineRange": [40, 110],
         "color": "#dc2626",
         "icon": "⚡",
-        "description": "SWOT分析、破局策略、盈利模式和执行路径",
+        "description": "SWOT分析、破局策略、多元化盈利模式和执行路径",
         "subsections": [
           {
             "id": "swot",
@@ -120,9 +132,9 @@
           },
           {
             "id": "revenue",
-            "title": "盈利模式",
-            "lineRange": [61, 74],
-            "description": "短中长期多元化盈利模式",
+            "title": "多元化盈利模式",
+            "lineRange": [61, 78],
+            "description": "短中长期多元化盈利模式（含表格和详细说明）",
             "models": [
               {
                 "id": "training",
@@ -147,45 +159,45 @@
           {
             "id": "team",
             "title": "团队配置",
-            "lineRange": [75, 86],
+            "lineRange": [79, 90],
             "description": "3人核心团队配置和资源复用"
           },
           {
             "id": "roadmap",
             "title": "执行路径",
-            "lineRange": [87, 99],
+            "lineRange": [91, 103],
             "description": "四阶段发展路径规划",
             "phases": [
               {
                 "id": "phase1",
                 "title": "快速启动",
                 "duration": "0-6个月",
-                "lineRange": [88, 90]
+                "lineRange": [92, 94]
               },
               {
                 "id": "phase2",
                 "title": "市场验证",
                 "duration": "6-12个月",
-                "lineRange": [91, 93]
+                "lineRange": [95, 97]
               },
               {
                 "id": "phase3",
                 "title": "规模扩张",
                 "duration": "1-2年",
-                "lineRange": [94, 96]
+                "lineRange": [98, 100]
               },
               {
                 "id": "phase4",
                 "title": "引领市场",
                 "duration": "2年以上",
-                "lineRange": [97, 99]
+                "lineRange": [101, 103]
               }
             ]
           },
           {
             "id": "goals",
-            "title": "年度目标",
-            "lineRange": [100, 105],
+            "title": "第一年核心目标",
+            "lineRange": [104, 110],
             "description": "第一年核心目标和关键指标"
           }
         ]
@@ -194,7 +206,7 @@
         "id": "summary",
         "title": "总结与建议",
         "subtitle": "战略总结与行动建议",
-        "lineRange": [106, 110],
+        "lineRange": [111, 110],
         "color": "#ea580c",
         "icon": "🏆",
         "description": "项目总结和实施建议"

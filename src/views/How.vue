@@ -230,6 +230,16 @@
       </div>
     </section>
 
+    <!-- 盈利模式表格展示 -->
+    <section class="revenue-table-section">
+      <RevenueModelTable />
+    </section>
+
+    <!-- 详细盈利模式说明 -->
+    <section class="detailed-revenue-section">
+      <DetailedRevenueModel />
+    </section>
+
     <!-- 团队配置 -->
     <section class="team-section">
       <h2 class="section-title">
@@ -513,9 +523,15 @@
 import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useAppStore } from '@/stores/app'
+import RevenueModelTable from '@/components/tables/RevenueModelTable.vue'
+import DetailedRevenueModel from '@/components/sections/DetailedRevenueModel.vue'
 
 export default {
   name: 'How',
+  components: {
+    RevenueModelTable,
+    DetailedRevenueModel
+  },
   setup() {
     const router = useRouter()
     const appStore = useAppStore()
@@ -773,6 +789,11 @@ export default {
 
 /* 盈利模式区域 */
 .revenue-section {
+  margin-bottom: 48px;
+}
+
+.revenue-table-section,
+.detailed-revenue-section {
   margin-bottom: 48px;
 }
 

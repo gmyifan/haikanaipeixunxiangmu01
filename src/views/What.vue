@@ -8,7 +8,7 @@
           WHAT：做什么？
         </h1>
         <p class="page-subtitle">
-          海看AI培训的核心定位、生态合作与盈利模式
+          海看AI培训的核心定位、业务架构与生态合作
         </p>
         <p class="page-description">
           以"培训+"为核心，构建"培训+咨询+工具+平台"的AI业务生态体系，成为山东省AI人才基础设施的核心承载者
@@ -176,21 +176,7 @@
       <PartnershipTable />
     </section>
 
-    <!-- 盈利模式表格 -->
-    <section class="revenue-section">
-      <h2 class="section-title">
-        <span class="title-icon">💰</span>
-        多元化盈利模式
-      </h2>
-      
-      <RevenueModelTable />
-    </section>
-
-    <!-- 详细盈利模式说明 -->
-    <section class="detailed-revenue-section">
-      <DetailedRevenueModel />
-    </section>
-
+  
     <!-- 快速导航 -->
     <section class="navigation-section">
       <div class="nav-buttons">
@@ -216,23 +202,19 @@ import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useAppStore } from '@/stores/app'
 import PartnershipTable from '@/components/tables/PartnershipTable.vue'
-import RevenueModelTable from '@/components/tables/RevenueModelTable.vue'
-import DetailedRevenueModel from '@/components/sections/DetailedRevenueModel.vue'
 
 export default {
   name: 'What',
   components: {
-    PartnershipTable,
-    RevenueModelTable,
-    DetailedRevenueModel
+    PartnershipTable
   },
   setup() {
     const router = useRouter()
     const appStore = useAppStore()
     
     // 页面数据
-    const lineRange = [31, 78] // 对应稿件.md行数
-    const readingTime = 8 // 预估阅读时间
+    const lineRange = [31, 73] // 对应稿件.md行数（移除盈利模式部分）
+    const readingTime = 6 // 预估阅读时间
     
     // 导航方法
     const goToPrev = () => {
