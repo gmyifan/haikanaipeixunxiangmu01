@@ -1,0 +1,104 @@
+{
+  "app": {
+    "name": "海看AI培训战略汇报平台",
+    "version": "0.1.5",
+    "description": "交互式可视化汇报系统，完整呈现110行战略规划内容",
+    "author": "Haikan AI Team",
+    "created": "2025-11-02",
+    "lastUpdated": "2025-11-02"
+  },
+  "content": {
+    "totalLines": 110,
+    "totalSections": 5,
+    "totalWords": 2500,
+    "estimatedReadingTime": 15,
+    "languages": ["zh-CN"],
+    "encoding": "UTF-8"
+  },
+  "features": {
+    "interactive": {
+      "enabled": true,
+      "elements": {
+        "expandableSections": 12,
+        "clickableItems": 45,
+        "searchableContent": true,
+        "annotations": true,
+        "bookmarks": true,
+        "export": true
+      }
+    },
+    "visualization": {
+      "charts": [
+        "timeline",
+        "matrix",
+        "network",
+        "progress",
+        "swot"
+      ],
+      "animations": true,
+      "responsive": true
+    },
+    "modes": {
+      "reading": {
+        "enabled": true,
+        "features": ["navigation", "search", "annotations", "bookmarks"]
+      },
+      "presentation": {
+        "enabled": true,
+        "features": ["fullscreen", "auto-play", "speaker-notes"]
+      }
+    }
+  },
+  "technical": {
+    "framework": "Vue.js 3",
+    "buildTool": "Vite",
+    "uiLibrary": "Element Plus",
+    "chartLibrary": "ECharts + D3.js",
+    "animationLibrary": "GSAP",
+    "cssFramework": "Tailwind CSS",
+    "deployment": "Static Files",
+    "browserSupport": [
+      "Chrome 90+",
+      "Firefox 88+",
+      "Safari 14+",
+      "Edge 90+"
+    ]
+  },
+  "performance": {
+    "loadTime": "< 3s",
+    "memoryUsage": "< 100MB",
+    "bundleSize": "< 5MB",
+    "offlineSupport": true
+  },
+  "security": {
+    "dataEncryption": false,
+    "userAuthentication": false,
+    "accessControl": false,
+    "auditLogging": false,
+    "dataPrivacy": "本地存储，不上传外部服务器"
+  },
+  "accessibility": {
+    "keyboardNavigation": true,
+    "screenReader": true,
+    "highContrast": true,
+    "fontSizeAdjustment": true,
+    "language": "zh-CN"
+  },
+  "customization": {
+    "themes": [
+      "business-blue",
+      "professional-gray",
+      "presentation-dark"
+    ],
+    "fonts": [
+      "Noto Sans SC",
+      "Microsoft YaHei",
+      "PingFang SC"
+    ],
+    "layoutOptions": [
+      "desktop",
+      "tablet",
+      "mobile"
+    ]
+  }
+}

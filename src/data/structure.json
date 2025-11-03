@@ -1,0 +1,262 @@
+{
+  "structure": {
+    "title": "海看AI培训：构建海看'技术+内容+场景'新生态的工作汇报",
+    "sections": [
+      {
+        "id": "strategy",
+        "title": "战略定位",
+        "subtitle": "以AI培训为起点，构建AI业务生态",
+        "lineRange": [1, 8],
+        "color": "#1e3a8a",
+        "icon": "🎯",
+        "description": "海看AI培训的总体战略定位和价值主张"
+      },
+      {
+        "id": "why",
+        "title": "WHY：为什么做？",
+        "subtitle": "时代浪潮与市场痛点",
+        "lineRange": [9, 30],
+        "color": "#059669",
+        "icon": "🔍",
+        "description": "开展AI培训业务的原因和市场机遇分析",
+        "subsections": [
+          {
+            "id": "policy-drive",
+            "title": "政策驱动",
+            "lineRange": [11, 14],
+            "description": "从国家到地方的政策强力驱动"
+          },
+          {
+            "id": "market-demand",
+            "title": "市场需求",
+            "lineRange": [15, 30],
+            "description": "内部转型需求和外部市场痛点",
+            "scenarios": [
+              {
+                "id": "government",
+                "title": "政府空转困境",
+                "lineRange": [21, 23],
+                "description": "买了不会用的痛点"
+              },
+              {
+                "id": "enterprise",
+                "title": "企业转型阵痛",
+                "lineRange": [24, 26],
+                "description": "想用不敢用的困境"
+              },
+              {
+                "id": "education",
+                "title": "教育覆盖缺口",
+                "lineRange": [27, 29],
+                "description": "想学没处学的问题"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "what",
+        "title": "WHAT：做什么？",
+        "subtitle": "构建'培训+服务+产品'的业务矩阵",
+        "lineRange": [31, 39],
+        "color": "#7c3aed",
+        "icon": "💼",
+        "description": "业务定位、客户选择和生态合作策略",
+        "subsections": [
+          {
+            "id": "positioning",
+            "title": "核心定位",
+            "lineRange": [33, 35],
+            "description": "咨询式培训服务商的定位"
+          },
+          {
+            "id": "ecosystem",
+            "title": "生态合作",
+            "lineRange": [36, 39],
+            "description": "合作伙伴矩阵构建"
+          }
+        ]
+      },
+      {
+        "id": "how",
+        "title": "HOW：如何做？",
+        "subtitle": "合纵连横与能力自建",
+        "lineRange": [40, 105],
+        "color": "#dc2626",
+        "icon": "⚡",
+        "description": "SWOT分析、破局策略、盈利模式和执行路径",
+        "subsections": [
+          {
+            "id": "swot",
+            "title": "SWOT分析",
+            "lineRange": [42, 46],
+            "description": "优势、劣势、机会、威胁分析"
+          },
+          {
+            "id": "breakthrough",
+            "title": "破局策略",
+            "lineRange": [47, 60],
+            "description": "品牌、师资、课程三大破局点",
+            "strategies": [
+              {
+                "id": "brand",
+                "title": "品牌破局",
+                "lineRange": [49, 51],
+                "description": "合纵连横，快速破圈"
+              },
+              {
+                "id": "teachers",
+                "title": "师资破局",
+                "lineRange": [52, 54],
+                "description": "外引专家，内建智库"
+              },
+              {
+                "id": "courses",
+                "title": "课程破局",
+                "lineRange": [55, 59],
+                "description": "引进与自研并行"
+              }
+            ]
+          },
+          {
+            "id": "revenue",
+            "title": "盈利模式",
+            "lineRange": [61, 74],
+            "description": "短中长期多元化盈利模式",
+            "models": [
+              {
+                "id": "training",
+                "title": "培训服务收费",
+                "term": "短期现金流",
+                "lineRange": [63, 66]
+              },
+              {
+                "id": "value-added",
+                "title": "培训+增值服务",
+                "term": "中期增长点",
+                "lineRange": [67, 71]
+              },
+              {
+                "id": "platform",
+                "title": "生态平台服务",
+                "term": "长期价值",
+                "lineRange": [72, 74]
+              }
+            ]
+          },
+          {
+            "id": "team",
+            "title": "团队配置",
+            "lineRange": [75, 86],
+            "description": "3人核心团队配置和资源复用"
+          },
+          {
+            "id": "roadmap",
+            "title": "执行路径",
+            "lineRange": [87, 99],
+            "description": "四阶段发展路径规划",
+            "phases": [
+              {
+                "id": "phase1",
+                "title": "快速启动",
+                "duration": "0-6个月",
+                "lineRange": [88, 90]
+              },
+              {
+                "id": "phase2",
+                "title": "市场验证",
+                "duration": "6-12个月",
+                "lineRange": [91, 93]
+              },
+              {
+                "id": "phase3",
+                "title": "规模扩张",
+                "duration": "1-2年",
+                "lineRange": [94, 96]
+              },
+              {
+                "id": "phase4",
+                "title": "引领市场",
+                "duration": "2年以上",
+                "lineRange": [97, 99]
+              }
+            ]
+          },
+          {
+            "id": "goals",
+            "title": "年度目标",
+            "lineRange": [100, 105],
+            "description": "第一年核心目标和关键指标"
+          }
+        ]
+      },
+      {
+        "id": "summary",
+        "title": "总结与建议",
+        "subtitle": "战略总结与行动建议",
+        "lineRange": [106, 110],
+        "color": "#ea580c",
+        "icon": "🏆",
+        "description": "项目总结和实施建议"
+      }
+    ]
+  },
+  "navigation": {
+    "quickAccess": [
+      {
+        "id": "overview",
+        "title": "内容概览",
+        "icon": "📊",
+        "description": "查看汇报内容统计和阅读进度"
+      },
+      {
+        "id": "search",
+        "title": "全文搜索",
+        "icon": "🔍",
+        "description": "搜索关键词和快速定位"
+      },
+      {
+        "id": "annotations",
+        "title": "重点标注",
+        "icon": "📌",
+        "description": "查看和管理重要内容标注"
+      },
+      {
+        "id": "export",
+        "title": "导出报告",
+        "icon": "📤",
+        "description": "生成PDF或Word版本报告"
+      }
+    ]
+  },
+  "interactions": {
+    "expandableSections": [
+      "policy-drive",
+      "market-demand",
+      "positioning",
+      "ecosystem",
+      "swot",
+      "breakthrough",
+      "revenue",
+      "team",
+      "roadmap",
+      "goals"
+    ],
+    "clickableElements": [
+      "development-path",
+      "value-proposition",
+      "scenarios",
+      "strategies",
+      "revenue-models",
+      "phases",
+      "team-roles"
+    ],
+    "searchableContent": [
+      "title",
+      "subtitle",
+      "content",
+      "key-points"
+    ],
+    "annotatableLines": "all"
+  }
+}

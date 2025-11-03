@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>海看AI培训战略汇报平台 - 测试版</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      min-height: 100vh;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    
+    .header {
+      text-align: center;
+      margin-bottom: 48px;
+      padding: 48px 0;
+      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+      border-radius: 16px;
+      color: white;
+    }
+    
+    .title {
+      font-size: 42px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    
+    .subtitle {
+      font-size: 20px;
+      opacity: 0.9;
+    }
+    
+    .nav-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      margin-bottom: 48px;
+    }
+    
+    .nav-card {
+      background: white;
+      border-radius: 12px;
+      padding: 32px;
+      text-decoration: none;
+      color: inherit;
+      border: 2px solid transparent;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .nav-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+      border-color: #1e3a8a;
+    }
+    
+    .nav-card h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #1f2937;
+    }
+    
+    .nav-card p {
+      font-size: 14px;
+      color: #6b7280;
+      line-height: 1.4;
+    }
+    
+    .content-section {
+      background: white;
+      border-radius: 12px;
+      padding: 32px;
+      margin-bottom: 24px;
+      border: 1px solid #e5e7eb;
+    }
+    
+    .content-section h2 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: #1f2937;
+    }
+    
+    .content-section p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #374151;
+      margin-bottom: 16px;
+    }
+    
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px;
+      margin-bottom: 32px;
+    }
+    
+    .stat-card {
+      background: #f8fafc;
+      border-radius: 12px;
+      padding: 24px;
+      text-align: center;
+      border: 1px solid #e2e8f0;
+    }
+    
+    .stat-number {
+      font-size: 36px;
+      font-weight: 700;
+      color: #1e3a8a;
+      margin-bottom: 8px;
+    }
+    
+    .stat-label {
+      font-size: 14px;
+      color: #6b7280;
+    }
+    
+    .search-box {
+      width: 100%;
+      padding: 16px;
+      border: 2px solid #e5e7eb;
+      border-radius: 8px;
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+    
+    .search-box:focus {
+      outline: none;
+      border-color: #1e3a8a;
+    }
+    
+    .content-lines {
+      max-height: 400px;
+      overflow-y: auto;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 16px;
+    }
+    
+    .line-item {
+      padding: 8px 0;
+      border-bottom: 1px solid #f3f4f6;
+    }
+    
+    .line-item:last-child {
+      border-bottom: none;
+    }
+    
+    .line-number {
+      display: inline-block;
+      width: 40px;
+      font-weight: 600;
+      color: #6b7280;
+    }
+    
+    .line-content {
+      color: #374151;
+    }
+    
+    .highlight {
+      background-color: #fef3c7;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+    
+    .bookmark-btn, .annotation-btn {
+      background: #1e3a8a;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+    
+    .bookmark-btn:hover, .annotation-btn:hover {
+      background: #1e40af;
+    }
+    
+    .test-section {
+      background: #ecfdf5;
+      border: 1px solid #a7f3d0;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+    
+    .test-section h3 {
+      color: #047857;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- 页面标题 -->
+    <header class="header">
+      <h1 class="title">🏢 海看AI培训战略汇报平台</h1>
+      <p class="subtitle">构建"技术+内容+场景"新生态 | 自动化测试页面</p>
+    </header>
+
+    <!-- 统计信息 -->
+    <div class="stats">
+      <div class="stat-card">
+        <div class="stat-number">110</div>
+        <div class="stat-label">行原文内容</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">4</div>
+        <div class="stat-label">主要章节</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">8</div>
+        <div class="stat-label">分钟阅读</div>
+      </div>
+    </div>
+
+    <!-- 导航卡片 -->
+    <div class="nav-grid">
+      <div class="nav-card" onclick="showSection('strategy')">
+        <h3>🎯 战略定位</h3>
+        <p>以AI培训为起点，构建AI业务生态，从培训→咨询→解决方案→平台服务的完整发展路径。</p>
+      </div>
+      <div class="nav-card" onclick="showSection('why')">
+        <h3>❓ WHY：为什么做？</h3>
+        <p>深入分析AI培训的市场机遇与战略必要性，抓住政策红利窗口期。</p>
+      </div>
+      <div class="nav-card" onclick="showSection('what')">
+        <h3>🎯 WHAT：做什么？</h3>
+        <p>构建完整的AI培训业务体系与产品矩阵，成为山东省领先的咨询式培训服务商。</p>
+      </div>
+      <div class="nav-card" onclick="showSection('how')">
+        <h3>🛠️ HOW：如何做？</h3>
+        <p>详细的实施路径与执行策略，三阶段发展和"借外脑+铸内功"的实施策略。</p>
+      </div>
+      <div class="nav-card" onclick="showSection('summary')">
+        <h3>📋 总结与建议</h3>
+        <p>项目整体回顾与未来发展规划，核心竞争优势和发展建议。</p>
+      </div>
+      <div class="nav-card" onclick="showSection('full')">
+        <h3>📄 完整内容</h3>
+        <p>查看110行原文的完整列表，支持搜索、书签和标注功能。</p>
+      </div>
+    </div>
+
+    <!-- 测试功能区域 -->
+    <div class="content-section">
+      <h2>🔍 功能测试区域</h2>
+      
+      <div class="test-section">
+        <h3>搜索功能测试</h3>
+        <input type="text" class="search-box" placeholder="搜索内容..." onkeyup="performSearch(this.value)">
+        <div id="search-results"></div>
+      </div>
+      
+      <div class="test-section">
+        <h3>书签功能测试</h3>
+        <button class="bookmark-btn" onclick="addBookmark()">添加书签</button>
+        <button class="bookmark-btn" onclick="showBookmarks()">显示书签</button>
+        <div id="bookmark-list"></div>
+      </div>
+      
+      <div class="test-section">
+        <h3>标注功能测试</h3>
+        <button class="annotation-btn" onclick="addAnnotation()">添加标注</button>
+        <button class="annotation-btn" onclick="showAnnotations()">显示标注</button>
+        <div id="annotation-list"></div>
+      </div>
+    </div>
+
+    <!-- 内容展示区域 -->
+    <div class="content-section" id="content-display" style="display: none;">
+      <h2 id="section-title">内容标题</h2>
+      <div id="section-content">内容将在这里显示...</div>
+    </div>
+
+    <!-- 完整内容列表 -->
+    <div class="content-section" id="full-content" style="display: none;">
+      <h2>📄 完整内容列表</h2>
+      <div class="content-lines" id="content-lines">
+        <!-- 内容行将在这里动态生成 -->
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 模拟内容数据
+    const contentData = [
+      { line: 1, content: "海看AI培训：构建海看\"技术+内容+场景\"新生态的工作汇报", section: "strategy" },
+      { line: 2, content: "战略定位：以AI培训为起点，构建AI业务生态", section: "strategy" },
+      { line: 3, content: "根据公司《人工智能应用创新发展纲要》，海看的目标是全面推行\"人工智能+\"，实现全业务的AI化赋能。", section: "strategy" },
+      { line: 4, content: "AI时代，最大的鸿沟不是技术，而是认知。我们不卖课程，我们提供'解决问题的方案'。", section: "strategy" },
+      { line: 5, content: "我们必须明确：AI培训业务不是海看的终点，而是海看人工智能业务的战略起点和重要切入点。", section: "strategy" },
+      { line: 9, content: "一、WHY：为什么做？（时代浪潮与市场痛点）", section: "why" },
+      { line: 10, content: "我们开展AI培训业务，不是一时兴起，而是顺势而为，是解决海看自身发展和外部市场迫切需求的必然选择。", section: "why" },
+      { line: 31, content: "二、WHAT：做什么？（构建\"培训+服务+产品\"的业务矩阵）", section: "what" },
+      { line: 32, content: "我们的目标是成为山东省领先的\"咨询式培训服务商\"，通过垂直发力、行业赋能，构建海看的AI业务生态。", section: "what" },
+      { line: 40, content: "三、HOW：如何做？（合纵连横与能力自建）", section: "how" },
+      { line: 41, content: "我们必须清醒认识到自身的优劣势，采取\"借外脑\"与\"铸内功\"相结合的策略，快速破局。", section: "how" },
+      { line: 106, content: "四、总结与建议", section: "summary" },
+      { line: 107, content: "AI培训不是终点，而是海看AI业务的战略起点。", section: "summary" },
+      { line: 110, content: "建议公司迅速成立专项工作组，整合资源，快速行动，以合作为主线，重点突破G端项目，并战略性深耕广电垂直领域，为海看在未来的人工智能时代构建最坚实的人才底座和业务生态。", section: "summary" }
+    ];
+
+    // 章节内容
+    const sectionContent = {
+      strategy: {
+        title: "🎯 战略定位",
+        content: "以AI培训为起点，构建AI业务生态，从培训→咨询→解决方案→平台服务的完整发展路径。根据公司《人工智能应用创新发展纲要》，海看的目标是全面推行\"人工智能+\"，实现全业务的AI化赋能。"
+      },
+      why: {
+        title: "❓ WHY：为什么做？",
+        content: "深入分析AI培训的市场机遇与战略必要性，抓住政策红利窗口期。我们开展AI培训业务，不是一时兴起，而是顺势而为，是解决海看自身发展和外部市场迫切需求的必然选择。"
+      },
+      what: {
+        title: "🎯 WHAT：做什么？",
+        content: "构建完整的AI培训业务体系与产品矩阵，成为山东省领先的咨询式培训服务商。我们的目标是成为山东省领先的\"咨询式培训服务商\"，通过垂直发力、行业赋能，构建海看的AI业务生态。"
+      },
+      how: {
+        title: "🛠️ HOW：如何做？",
+        content: "详细的实施路径与执行策略，三阶段发展和\"借外脑+铸内功\"的实施策略。我们必须清醒认识到自身的优劣势，采取\"借外脑\"与\"铸内功\"相结合的策略，快速破局。"
+      },
+      summary: {
+        title: "📋 总结与建议",
+        content: "项目整体回顾与未来发展规划，核心竞争优势和发展建议。AI培训不是终点，而是海看AI业务的战略起点。建议公司迅速成立专项工作组，整合资源，快速行动。"
+      }
+    };
+
+    // 书签和标注数据
+    let bookmarks = [];
+    let annotations = [];
+
+    // 显示章节内容
+    function showSection(sectionId) {
+      const display = document.getElementById('content-display');
+      const title = document.getElementById('section-title');
+      const content = document.getElementById('section-content');
+      const fullContent = document.getElementById('full-content');
+      
+      fullContent.style.display = 'none';
+      display.style.display = 'block';
+      
+      if (sectionId === 'full') {
+        showFullContent();
+        return;
+      }
+      
+      const section = sectionContent[sectionId];
+      if (section) {
+        title.textContent = section.title;
+        content.innerHTML = `<p>${section.content}</p>`;
+      }
+    }
+
+    // 显示完整内容
+    function showFullContent() {
+      const display = document.getElementById('content-display');
+      const fullContent = document.getElementById('full-content');
+      const contentLines = document.getElementById('content-lines');
+      
+      display.style.display = 'none';
+      fullContent.style.display = 'block';
+      
+      contentLines.innerHTML = contentData.map(item => `
+        <div class="line-item" data-line="${item.line}">
+          <span class="line-number">${item.line}:</span>
+          <span class="line-content">${item.content}</span>
+          <button class="bookmark-btn" onclick="toggleBookmark(${item.line})">🔖</button>
+          <button class="annotation-btn" onclick="toggleAnnotation(${item.line})">📝</button>
+        </div>
+      `).join('');
+    }
+
+    // 搜索功能
+    function performSearch(query) {
+      const results = document.getElementById('search-results');
+      if (!query.trim()) {
+        results.innerHTML = '';
+        return;
+      }
+      
+      const matches = contentData.filter(item => 
+        item.content.toLowerCase().includes(query.toLowerCase())
+      );
+      
+      results.innerHTML = matches.map(item => `
+        <div style="padding: 8px; margin: 4px 0; background: #f8fafc; border-radius: 4px;">
+          <strong>第${item.line}行:</strong> ${highlightText(item.content, query)}
+        </div>
+      `).join('');
+    }
+
+    // 高亮文本
+    function highlightText(text, query) {
+      const regex = new RegExp(`(${query})`, 'gi');
+      return text.replace(regex, '<span class="highlight">$1</span>');
+    }
+
+    // 书签功能
+    function addBookmark() {
+      const lineNumber = prompt('请输入要添加书签的行号:');
+      if (lineNumber) {
+        const bookmark = {
+          id: Date.now(),
+          line: parseInt(lineNumber),
+          title: `第${lineNumber}行`,
+          createdAt: new Date().toLocaleString()
+        };
+        bookmarks.push(bookmark);
+        alert(`已添加书签: ${bookmark.title}`);
+      }
+    }
+
+    function showBookmarks() {
+      const list = document.getElementById('bookmark-list');
+      if (bookmarks.length === 0) {
+        list.innerHTML = '<p>暂无书签</p>';
+        return;
+      }
+      
+      list.innerHTML = bookmarks.map(bookmark => `
+        <div style="padding: 8px; margin: 4px 0; background: #f0f9ff; border-radius: 4px;">
+          <strong>${bookmark.title}</strong> - ${bookmark.createdAt}
+          <button onclick="removeBookmark(${bookmark.id})" style="margin-left: 8px;">删除</button>
+        </div>
+      `).join('');
+    }
+
+    function toggleBookmark(lineNumber) {
+      const existing = bookmarks.find(b => b.line === lineNumber);
+      if (existing) {
+        bookmarks = bookmarks.filter(b => b.line !== lineNumber);
+        alert(`已删除第${lineNumber}行的书签`);
+      } else {
+        bookmarks.push({
+          id: Date.now(),
+          line: lineNumber,
+          title: `第${lineNumber}行`,
+          createdAt: new Date().toLocaleString()
+        });
+        alert(`已添加第${lineNumber}行的书签`);
+      }
+    }
+
+    function removeBookmark(id) {
+      bookmarks = bookmarks.filter(b => b.id !== id);
+      showBookmarks();
+    }
+
+    // 标注功能
+    function addAnnotation() {
+      const lineNumber = prompt('请输入要添加标注的行号:');
+      const text = prompt('请输入标注内容:');
+      if (lineNumber && text) {
+        const annotation = {
+          id: Date.now(),
+          line: parseInt(lineNumber),
+          text: text,
+          createdAt: new Date().toLocaleString()
+        };
+        annotations.push(annotation);
+        alert(`已添加标注: 第${lineNumber}行 - ${text}`);
+      }
+    }
+
+    function showAnnotations() {
+      const list = document.getElementById('annotation-list');
+      if (annotations.length === 0) {
+        list.innerHTML = '<p>暂无标注</p>';
+        return;
+      }
+      
+      list.innerHTML = annotations.map(annotation => `
+        <div style="padding: 8px; margin: 4px 0; background: #fef3c7; border-radius: 4px;">
+          <strong>第${annotation.line}行:</strong> ${annotation.text} - ${annotation.createdAt}
+          <button onclick="removeAnnotation(${annotation.id})" style="margin-left: 8px;">删除</button>
+        </div>
+      `).join('');
+    }
+
+    function toggleAnnotation(lineNumber) {
+      const text = prompt('请输入标注内容:');
+      if (text) {
+        const annotation = {
+          id: Date.now(),
+          line: lineNumber,
+          text: text,
+          createdAt: new Date().toLocaleString()
+        };
+        annotations.push(annotation);
+        alert(`已添加第${lineNumber}行的标注: ${text}`);
+      }
+    }
+
+    function removeAnnotation(id) {
+      annotations = annotations.filter(a => a.id !== id);
+      showAnnotations();
+    }
+
+    // 页面加载完成后的初始化
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log('海看AI培训平台测试页面已加载');
+      console.log('可用功能测试:');
+      console.log('1. 导航卡片点击');
+      console.log('2. 搜索功能');
+      console.log('3. 书签功能');
+      console.log('4. 标注功能');
+      console.log('5. 响应式设计');
+    });
+  </script>
+</body>
+</html>
