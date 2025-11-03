@@ -184,7 +184,7 @@
                     <template #dropdown>
                       <el-dropdown-menu>
                         <el-dropdown-item :command="`bookmark-${item.line}`">
-                          <el-icon><Bookmark /></el-icon>
+                          <el-icon><Star /></el-icon>
                           {{ isBookmarked(item.line) ? '移除书签' : '添加书签' }}
                         </el-dropdown-item>
                         <el-dropdown-item :command="`annotation-${item.line}`">
@@ -286,7 +286,7 @@ import { useRouter } from 'vue-router'
 import { useAppStore } from '@/stores/app'
 import {
   Document, View, Plus, Minus, Top, Search, MoreFilled,
-  Bookmark, EditPen, CopyDocument, Share, Close
+  Star, EditPen, CopyDocument, Share, Close
 } from '@element-plus/icons-vue'
 import { ElMessage } from 'element-plus'
 
@@ -294,7 +294,7 @@ export default {
   name: 'FullContent',
   components: {
     Document, View, Plus, Minus, Top, Search, MoreFilled,
-    Bookmark, EditPen, CopyDocument, Share, Close
+    Star, EditPen, CopyDocument, Share, Close
   },
   setup() {
     const router = useRouter()
